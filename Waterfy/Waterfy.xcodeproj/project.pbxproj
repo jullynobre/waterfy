@@ -15,6 +15,9 @@
 		57321640235603460034E278 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5732163E235603460034E278 /* LaunchScreen.storyboard */; };
 		5732164B235603460034E278 /* WaterfyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732164A235603460034E278 /* WaterfyTests.swift */; };
 		5732165823561BA80034E278 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5732165723561BA80034E278 /* CloudKit.framework */; };
+		5732165B235657FC0034E278 /* CKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732165A235657FC0034E278 /* CKManager.swift */; };
+		5732165E235659010034E278 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732165D235659010034E278 /* Drink.swift */; };
+		5732166023565B400034E278 /* CKManager+Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732165F23565B3F0034E278 /* CKManager+Drink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,9 @@
 		5732164C235603460034E278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5732165523561B580034E278 /* Waterfy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Waterfy.entitlements; sourceTree = "<group>"; };
 		5732165723561BA80034E278 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		5732165A235657FC0034E278 /* CKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKManager.swift; sourceTree = "<group>"; };
+		5732165D235659010034E278 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		5732165F23565B3F0034E278 /* CKManager+Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKManager+Drink.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,8 @@
 		57321632235603420034E278 /* Waterfy */ = {
 			isa = PBXGroup;
 			children = (
+				5732165C235658F50034E278 /* Models */,
+				57321659235657EA0034E278 /* Managers */,
 				5732165523561B580034E278 /* Waterfy.entitlements */,
 				57321633235603420034E278 /* AppDelegate.swift */,
 				57321635235603420034E278 /* SceneDelegate.swift */,
@@ -119,6 +127,23 @@
 				5732165723561BA80034E278 /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57321659235657EA0034E278 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				5732165A235657FC0034E278 /* CKManager.swift */,
+				5732165F23565B3F0034E278 /* CKManager+Drink.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		5732165C235658F50034E278 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5732165D235659010034E278 /* Drink.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,9 +247,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5732166023565B400034E278 /* CKManager+Drink.swift in Sources */,
 				57321634235603420034E278 /* AppDelegate.swift in Sources */,
 				57321636235603420034E278 /* SceneDelegate.swift in Sources */,
 				57321638235603420034E278 /* ContentView.swift in Sources */,
+				5732165E235659010034E278 /* Drink.swift in Sources */,
+				5732165B235657FC0034E278 /* CKManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
