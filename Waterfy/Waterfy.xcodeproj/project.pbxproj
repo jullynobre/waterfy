@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		57321634235603420034E278 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57321633235603420034E278 /* AppDelegate.swift */; };
 		57321636235603420034E278 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57321635235603420034E278 /* SceneDelegate.swift */; };
-		57321638235603420034E278 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57321637235603420034E278 /* ContentView.swift */; };
 		5732163A235603460034E278 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57321639235603460034E278 /* Assets.xcassets */; };
 		5732163D235603460034E278 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5732163C235603460034E278 /* Preview Assets.xcassets */; };
 		57321640235603460034E278 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5732163E235603460034E278 /* LaunchScreen.storyboard */; };
@@ -18,6 +17,10 @@
 		5732165B235657FC0034E278 /* CKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732165A235657FC0034E278 /* CKManager.swift */; };
 		5732165E235659010034E278 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732165D235659010034E278 /* Drink.swift */; };
 		5732166023565B400034E278 /* CKManager+Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732165F23565B3F0034E278 /* CKManager+Drink.swift */; };
+		5732166323566F020034E278 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732166223566F020034E278 /* TabBarView.swift */; };
+		5732166523566F490034E278 /* Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732166423566F490034E278 /* Today.swift */; };
+		5732166723566F540034E278 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732166623566F540034E278 /* History.swift */; };
+		5732166923566F5F0034E278 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732166823566F5F0034E278 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +37,6 @@
 		57321630235603420034E278 /* Waterfy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waterfy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57321633235603420034E278 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57321635235603420034E278 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		57321637235603420034E278 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		57321639235603460034E278 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5732163C235603460034E278 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5732163F235603460034E278 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		5732165A235657FC0034E278 /* CKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKManager.swift; sourceTree = "<group>"; };
 		5732165D235659010034E278 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 		5732165F23565B3F0034E278 /* CKManager+Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKManager+Drink.swift"; sourceTree = "<group>"; };
+		5732166223566F020034E278 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		5732166423566F490034E278 /* Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Today.swift; sourceTree = "<group>"; };
+		5732166623566F540034E278 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		5732166823566F5F0034E278 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,12 +96,12 @@
 		57321632235603420034E278 /* Waterfy */ = {
 			isa = PBXGroup;
 			children = (
+				5732166123566EEA0034E278 /* Views */,
 				5732165C235658F50034E278 /* Models */,
 				57321659235657EA0034E278 /* Managers */,
 				5732165523561B580034E278 /* Waterfy.entitlements */,
 				57321633235603420034E278 /* AppDelegate.swift */,
 				57321635235603420034E278 /* SceneDelegate.swift */,
-				57321637235603420034E278 /* ContentView.swift */,
 				57321639235603460034E278 /* Assets.xcassets */,
 				5732163E235603460034E278 /* LaunchScreen.storyboard */,
 				57321641235603460034E278 /* Info.plist */,
@@ -144,6 +150,17 @@
 				5732165D235659010034E278 /* Drink.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5732166123566EEA0034E278 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5732166423566F490034E278 /* Today.swift */,
+				5732166623566F540034E278 /* History.swift */,
+				5732166823566F5F0034E278 /* Settings.swift */,
+				5732166223566F020034E278 /* TabBarView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +266,12 @@
 			files = (
 				5732166023565B400034E278 /* CKManager+Drink.swift in Sources */,
 				57321634235603420034E278 /* AppDelegate.swift in Sources */,
+				5732166723566F540034E278 /* History.swift in Sources */,
 				57321636235603420034E278 /* SceneDelegate.swift in Sources */,
-				57321638235603420034E278 /* ContentView.swift in Sources */,
 				5732165E235659010034E278 /* Drink.swift in Sources */,
+				5732166323566F020034E278 /* TabBarView.swift in Sources */,
+				5732166923566F5F0034E278 /* Settings.swift in Sources */,
+				5732166523566F490034E278 /* Today.swift in Sources */,
 				5732165B235657FC0034E278 /* CKManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

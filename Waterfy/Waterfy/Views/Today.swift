@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  Today.swift
 //  Waterfy
 //
 //  Created by Diuli Nobre on 15/10/19.
@@ -8,14 +8,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct Today: View {
     var body: some View {
-        Text("Waterfy")
+        Text("Today")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Today_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Today()
     }
 }
