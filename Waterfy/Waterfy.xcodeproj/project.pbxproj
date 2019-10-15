@@ -14,6 +14,7 @@
 		5732163D235603460034E278 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5732163C235603460034E278 /* Preview Assets.xcassets */; };
 		57321640235603460034E278 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5732163E235603460034E278 /* LaunchScreen.storyboard */; };
 		5732164B235603460034E278 /* WaterfyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732164A235603460034E278 /* WaterfyTests.swift */; };
+		5732165823561BA80034E278 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5732165723561BA80034E278 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,8 @@
 		57321646235603460034E278 /* WaterfyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterfyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5732164A235603460034E278 /* WaterfyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfyTests.swift; sourceTree = "<group>"; };
 		5732164C235603460034E278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5732165523561B580034E278 /* Waterfy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Waterfy.entitlements; sourceTree = "<group>"; };
+		5732165723561BA80034E278 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5732165823561BA80034E278 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +68,7 @@
 				57321632235603420034E278 /* Waterfy */,
 				57321649235603460034E278 /* WaterfyTests */,
 				57321631235603420034E278 /* Products */,
+				5732165623561BA80034E278 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +84,7 @@
 		57321632235603420034E278 /* Waterfy */ = {
 			isa = PBXGroup;
 			children = (
+				5732165523561B580034E278 /* Waterfy.entitlements */,
 				57321633235603420034E278 /* AppDelegate.swift */,
 				57321635235603420034E278 /* SceneDelegate.swift */,
 				57321637235603420034E278 /* ContentView.swift */,
@@ -105,6 +111,14 @@
 				5732164C235603460034E278 /* Info.plist */,
 			);
 			path = WaterfyTests;
+			sourceTree = "<group>";
+		};
+		5732165623561BA80034E278 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5732165723561BA80034E278 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +376,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Waterfy/Waterfy.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Waterfy/Preview Content\"";
 				DEVELOPMENT_TEAM = U9XP2P92X2;
@@ -382,6 +397,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Waterfy/Waterfy.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Waterfy/Preview Content\"";
 				DEVELOPMENT_TEAM = U9XP2P92X2;
