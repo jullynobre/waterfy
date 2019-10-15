@@ -23,6 +23,7 @@
 		5732166923566F5F0034E278 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732166823566F5F0034E278 /* Settings.swift */; };
 		5732166C235673620034E278 /* DayProgressCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732166B235673620034E278 /* DayProgressCard.swift */; };
 		5732166E23567BA80034E278 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732166D23567BA80034E278 /* ProgressBar.swift */; };
+		5735586B23568BDC00F82D47 /* Color+Waterfy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5735586A23568BDC00F82D47 /* Color+Waterfy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		5732166823566F5F0034E278 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		5732166B235673620034E278 /* DayProgressCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayProgressCard.swift; sourceTree = "<group>"; };
 		5732166D23567BA80034E278 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		5735586A23568BDC00F82D47 /* Color+Waterfy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Waterfy.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		57321632235603420034E278 /* Waterfy */ = {
 			isa = PBXGroup;
 			children = (
+				5735586923568BC800F82D47 /* Extensions */,
 				5732166123566EEA0034E278 /* Views */,
 				5732165C235658F50034E278 /* Models */,
 				57321659235657EA0034E278 /* Managers */,
@@ -183,6 +186,14 @@
 				5732166B235673620034E278 /* DayProgressCard.swift */,
 			);
 			path = Today;
+			sourceTree = "<group>";
+		};
+		5735586923568BC800F82D47 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5735586A23568BDC00F82D47 /* Color+Waterfy.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +303,7 @@
 				5732166723566F540034E278 /* History.swift in Sources */,
 				57321636235603420034E278 /* SceneDelegate.swift in Sources */,
 				5732165E235659010034E278 /* Drink.swift in Sources */,
+				5735586B23568BDC00F82D47 /* Color+Waterfy.swift in Sources */,
 				5732166C235673620034E278 /* DayProgressCard.swift in Sources */,
 				5732166323566F020034E278 /* TabBarView.swift in Sources */,
 				5732166923566F5F0034E278 /* Settings.swift in Sources */,

@@ -23,7 +23,7 @@ struct DayProgressCard: View {
             ProgressBar(percentage: $barPercentage).frame(height: 8, alignment: .bottom)
         }.padding()
         .cornerRadius(20)
-        .background(Color.gray.opacity(0.1))
+        .background(Color.waterfySecondary)
         .cornerRadius(10)
     }
 }

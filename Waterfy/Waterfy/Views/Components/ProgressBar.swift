@@ -22,7 +22,7 @@ struct ProgressBar: View {
                         .frame(minWidth: 0, idealWidth:self.getProgressBarWidth(geometry: geometry),
                                maxWidth: self.getProgressBarWidth(geometry: geometry))
                         .opacity(0.5)
-                        .background(Color.green)
+                        .background(Color.waterfyPrimary)
                         .cornerRadius(4)
                         .animation(.default)
                 }
