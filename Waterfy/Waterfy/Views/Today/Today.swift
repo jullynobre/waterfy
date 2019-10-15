@@ -10,7 +10,12 @@ import SwiftUI
 
 struct Today: View {
     var body: some View {
-        Text("Today")
+        NavigationView {
+            Text("Today View")
+            
+            .navigationBarTitle(Text("Today"))
+            .padding()
+        }
     }
 }
 
