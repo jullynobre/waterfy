@@ -17,15 +17,17 @@ struct ProgressBar: View {
                 ZStack(alignment: .leading) {
                     Rectangle()
                         .opacity(0.1)
+                        .cornerRadius(4)
                     Rectangle()
                         .frame(minWidth: 0, idealWidth:self.getProgressBarWidth(geometry: geometry),
                                maxWidth: self.getProgressBarWidth(geometry: geometry))
                         .opacity(0.5)
                         .background(Color.green)
+                        .cornerRadius(4)
                         .animation(.default)
                 }
-                .frame(height:10)
-            }.frame(height:10)
+                .frame(height:8)
+            }.frame(height:8)
         }
     }
     

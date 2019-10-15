@@ -9,10 +9,14 @@
 import SwiftUI
 
 struct Today: View {
+    @State var percentage: CGFloat = 0.8
+    
     var body: some View {
         NavigationView {
-            Text("Today View")
-            
+            VStack {
+                DayProgressCard()
+                Spacer()
+            }
             .navigationBarTitle(Text("Today"))
             .padding()
         }
