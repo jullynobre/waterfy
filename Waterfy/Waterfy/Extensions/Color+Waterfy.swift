@@ -9,7 +9,6 @@
 import SwiftUI
 
 extension Color {
-    static let waterfyPrimary = Color.accentColor
-    static let waterfySecondary = Color.init(.sRGB, red: 67/255, green: 120/255, blue: 180/255, opacity: 0.2)
-    
+    static let waterfyPrimary = Color(UIColor.systemBlue)
+    static let waterfySecondary = Color(UIColor.systemBlue).opacity(0.15)
 }

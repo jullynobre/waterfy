@@ -16,15 +16,15 @@ struct ProgressBar: View {
             VStack(alignment: .trailing) {
                 ZStack(alignment: .leading) {
                     Rectangle()
-                        .opacity(0.1)
-                        .cornerRadius(4)
-                    Rectangle()
                         .frame(minWidth: 0, idealWidth:self.getProgressBarWidth(geometry: geometry),
                                maxWidth: self.getProgressBarWidth(geometry: geometry))
-                        .opacity(0.5)
+                        .opacity(0.2)
                         .background(Color.waterfyPrimary)
                         .cornerRadius(4)
                         .animation(.default)
+                    Rectangle()
+                        .opacity(0.1)
+                        .cornerRadius(4)
                 }
                 .frame(height:8)
             }.frame(height:8)

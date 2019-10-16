@@ -15,7 +15,9 @@ struct Today: View {
         NavigationView {
             VStack {
                 DayProgressCard()
+                Divider()
                 Spacer()
+                
             }
             .navigationBarTitle(Text("Today"))
             .padding()
