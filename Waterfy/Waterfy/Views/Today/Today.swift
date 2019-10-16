@@ -7,20 +7,32 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct Today: View {
     @State var percentage: CGFloat = 0.8
     
+    init() {
+        UITableView.appearance().separatorStyle = .none
+    }
+    
     var body: some View {
         NavigationView {
             VStack {
-                DayProgressCard()
-                Divider()
-                Spacer()
-                
+                List {
+                    DayProgressCard()
+                    Divider().padding(.top, -8)
+                    DrinksCollection(drinks: [
+                        Drink(potion: 200),
+                        Drink(potion: 200),
+                        Drink(potion: 200),
+                        Drink(potion: 200),
+                        Drink(potion: 200)
+                    ])
+                    
+                }
             }
             .navigationBarTitle(Text("Today"))
-            .padding()
         }
     }
 }
