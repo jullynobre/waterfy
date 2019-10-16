@@ -21,7 +21,9 @@ struct Today: View {
             VStack {
                 List {
                     DayProgressCard()
-                    Divider().padding(.top, -8)
+                    
+                    Divider()
+                    
                     DrinksCollection(drinks: [
                         Drink(potion: 200),
                         Drink(potion: 200),
