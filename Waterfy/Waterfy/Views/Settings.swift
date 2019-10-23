@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  Settings.swift
 //  Waterfy
 //
 //  Created by Diuli Nobre on 15/10/19.
@@ -8,14 +8,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct Settings: View {
     var body: some View {
-        Text("Waterfy")
+        Text("Settings")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Settings_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Settings()
     }
 }
