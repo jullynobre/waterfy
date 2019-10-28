@@ -35,6 +35,9 @@ struct Today: View {
                 }
             }
             .navigationBarTitle(Text("Today"))
+            .navigationBarItems(trailing: Button("New Drink"){
+                print("Add Drink Tapped")
+            })
         }
     }
 }
