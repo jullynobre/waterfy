@@ -10,7 +10,8 @@ import SwiftUI
 import UIKit
 
 struct Today: View {
-    @State var percentage: CGFloat = 0.8
+    @State private var percentage: CGFloat = 0.8
+    @State private var showNewDrinkModal: Bool = false
     
     init() {
         UITableView.appearance().separatorStyle = .none
@@ -35,6 +36,14 @@ struct Today: View {
                 }
             }
             .navigationBarTitle(Text("Today"))
+            .navigationBarItems(trailing:
+                Button("New Drink"){
+                    self.showNewDrinkModal.toggle()
+                }
+            )
+            .sheet(isPresented: self.$showNewDrinkModal) {
+                NewDrink()
+            }
         }
     }
 }
