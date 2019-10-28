@@ -27,6 +27,7 @@
 		577A4401235797110073A7F9 /* DrinkCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577A4400235797110073A7F9 /* DrinkCard.swift */; };
 		577A440323579B320073A7F9 /* DrinksCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577A440223579B320073A7F9 /* DrinksCollection.swift */; };
 		577A440523579C520073A7F9 /* Array+chunkedInto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577A440423579C520073A7F9 /* Array+chunkedInto.swift */; };
+		57923F2223675F5C00FB417F /* NewDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57923F2123675F5C00FB417F /* NewDrink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		577A4400235797110073A7F9 /* DrinkCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCard.swift; sourceTree = "<group>"; };
 		577A440223579B320073A7F9 /* DrinksCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksCollection.swift; sourceTree = "<group>"; };
 		577A440423579C520073A7F9 /* Array+chunkedInto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+chunkedInto.swift"; sourceTree = "<group>"; };
+		57923F2123675F5C00FB417F /* NewDrink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDrink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 		5732166123566EEA0034E278 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				57923F2023675F3E00FB417F /* New Drink */,
 				5732166F23567C070034E278 /* Today */,
 				5732166A235673330034E278 /* Components */,
 				5732166623566F540034E278 /* History.swift */,
@@ -203,6 +206,14 @@
 				577A440423579C520073A7F9 /* Array+chunkedInto.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		57923F2023675F3E00FB417F /* New Drink */ = {
+			isa = PBXGroup;
+			children = (
+				57923F2123675F5C00FB417F /* NewDrink.swift */,
+			);
+			path = "New Drink";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +328,7 @@
 				577A440323579B320073A7F9 /* DrinksCollection.swift in Sources */,
 				577A440523579C520073A7F9 /* Array+chunkedInto.swift in Sources */,
 				5732166C235673620034E278 /* DayProgressCard.swift in Sources */,
+				57923F2223675F5C00FB417F /* NewDrink.swift in Sources */,
 				5732166323566F020034E278 /* TabBarView.swift in Sources */,
 				5732166923566F5F0034E278 /* Settings.swift in Sources */,
 				5732166523566F490034E278 /* Today.swift in Sources */,
