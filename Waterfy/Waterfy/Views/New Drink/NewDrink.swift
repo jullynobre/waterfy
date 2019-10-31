@@ -12,21 +12,20 @@ struct NewDrink: View {
     
     @State private var enableLogging = false
     @State private var selectedColor = 0
-    @State private var colors = ["200mL", "250mL", "500mL", "1000mL"]
+    private var sizes = ["200mL", "250mL", "500mL", "1000mL"]
     
     var body: some View {
         NavigationView {
             Form {
-                Section(header: Text("Drink Size")) {
-                    Picker(selection: $selectedColor, label: Text("Select the Drink Size")) {
-                        ForEach(0 ..< colors.count) {
-                            Text(self.colors[$0]).tag($0)
+                Section {
+                    Picker(selection: $selectedColor, label: Text("Drink Size")) {
+                        ForEach(0 ..< sizes.count) {
+                            Text(self.sizes[$0]).tag($0)
                         }
-                    }.pickerStyle(SegmentedPickerStyle())
+                    }
                 }
-                Section(header: Text("Swipe down the modal to dismiss")) {
+                Section(footer: Text("Swipe down the modal to dismiss")) {
                     Button(action: {
-                    // activate theme!
                     }) {
                         Text("Add Drink")
                     }
