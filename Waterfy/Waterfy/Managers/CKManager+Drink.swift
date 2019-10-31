@@ -25,5 +25,15 @@ extension CKManager {
             completion(.success(drinks))
         }
     }
-        
+    
+    public func saveDrink(drink: Drink, completion:  @escaping (Result<Drink, Error>) -> Void) {
+        CKManager.shared.save(drink.record) { (result) in
+            switch result {
+            case .success(_):
+                completion(.success(drink))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
 }

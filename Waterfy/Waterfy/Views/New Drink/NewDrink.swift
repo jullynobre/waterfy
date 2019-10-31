@@ -11,14 +11,14 @@ import SwiftUI
 struct NewDrink: View {
     
     @State private var enableLogging = false
-    @State private var selectedColor = 0
+    @State private var selectedSize = 0
     private var sizes = ["200mL", "250mL", "500mL", "1000mL"]
     
     var body: some View {
         NavigationView {
             Form {
                 Section {
-                    Picker(selection: $selectedColor, label: Text("Drink Size")) {
+                    Picker(selection: $selectedSize, label: Text("Drink Size")) {
                         ForEach(0 ..< sizes.count) {
                             Text(self.sizes[$0]).tag($0)
                         }
